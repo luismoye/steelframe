@@ -1,0 +1,55 @@
+  <div class="ui-content">                     
+
+          <div class="div-galeria-steel-frame height-galeria-steel-frame">
+            <ul>
+                <li> 
+                     <figure><img src="images/exterior-1.jpg" /></figure> 
+                     <!-- h=290 w=290-->
+                     
+                     <!-- he=28, border=1px-->
+                     <p><span>Terminación exterior Barrio Privado. MéxicoAAAAA-1111</span></p>
+                </li>
+                <li> 
+                     <figure><img src="images/exterior-2.jpg" /></figure>                      
+                     <p><span>Terminación exterior Barrio Privado. MéxicoAAAAA-22222</span></p>
+                </li>                
+                <li> 
+                     <figure><img src="images/exterior-2.jpg" /></figure>                      
+                     <p><span>Terminación exterior Barrio Privado. MéxicoAAAAA-33333</span></p>
+                </li>                
+                <li> 
+                     <figure><img src="images/exterior-2.jpg" /></figure>                      
+                     <p><span>Terminación exterior Barrio Privado. MéxicoAAAAA-444444</span></p>
+                </li>                
+                <li> 
+                     <figure><img src="images/exterior-2.jpg" /></figure>                      
+                     <p><span>Terminación exterior Barrio Privado. MéxicoAAAAA-555555</span></p> 
+                </li>                
+            </ul>
+          </div>
+
+            <script type="text/javascript"> 
+                  $('ready',main)
+
+                  function main()
+                  {
+                     calcularAltoContenido()
+                     // alert('hola')
+                  }
+                  function calcularAltoContenido()
+                  {
+                      height=screen.height 
+
+                      var heightToolbar =jQuery('body #toolbar').height()    
+                      var heightPaisCiudad =jQuery('#galeria-steel-frame-page .div-pais-ciudad-prov').height(); 
+                      var heightComplemento=9+8-4;
+                      var height=height-(heightToolbar+heightPaisCiudad+heightComplemento);
+                         $('#galeria-steel-frame-page').find('.height-galeria-steel-frame').css({'height':height+'px'})
+                    
+                  } 
+            </script>
+            
+
+</div>
+    
+    

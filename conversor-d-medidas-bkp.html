@@ -1,0 +1,204 @@
+<div style="position:relative">
+  
+    <section id="conversor-d-medidas-page" data-role="page" class="home-proovedores  home-galeria-steel-frame"> 
+    <link rel="stylesheet" href="css/mobiscroll/spinningwheel.css" type="text/css" />        
+       <style type="text/css">
+         /* body{position: relative!important;} */
+          button{font-size:16px;} 
+          /*
+             #result { margin:10px; background:#aaa; -webkit-border-radius:8px; padding:8px; font-size:18px; }
+          */
+
+          #btn-result,#result { font-size:11px;width:100%;height: 40px;display:inline-block; margin: 0;padding:0; };
+
+      </style>
+
+        <script type="text/javascript" src="js/mobiscroll/spinningwheel.js?v=1.4"></script> 
+        <div class="ui-content">
+            <div class="div-conversor-medida-sup">
+               <div>
+                  <input type="text" class="ipt-medida color-white" placeholder="Valor"  required="required" value="325">
+               </div>
+              <!-- -->
+               <div  data-snap-ignore="true"> 
+                <!--
+                    <select id="medidas-1">
+                      <option value="autria">Austria</option>
+                      <option value="2">Belgium</option>
+                      <option value="5">France</option>
+                      <option value="3">Germany</option>
+                      <option value="8">Great Britain</option>
+                      <option value="4">Luxembourg</option>
+                      <option selected="selected" value="1">Netherlands</option>
+                      <option value="10">Spain</option>
+                      <option value="9">Sweden</option>
+                      <option value="7">Switserland</option>
+                    </select> 
+                 --> 
+               </div>
+            </div> 
+
+            <div class="triangulo-inf-conversion-d-medidas" > </div>
+
+            <div class="div-conversor-medida-inf">
+               <div>
+                    <label class="ipt-medida color-white"> 0,345</label>
+               </div>
+               <div>
+                <!--
+                  <ul class="ul-medidas">
+                     <li><span class="color-blanco-celeste">Pies</span></li>
+                     <li><span class="color-white">Pulgadas</span></li>
+                     <li><span class="color-blanco-celeste">Millas</span></li>
+                  </ul>
+                -->
+               </div>  
+            </div> 
+            <div class="div-equivalencia-d-conversiones">
+                  <p class="color-blamco-plomo"> 1 Centímetro=0.393700787 Pulgadas </p> 
+            </div>
+            <div>
+                <button id="btn-result" onclick="done()">birth date</button>
+                <p id="result">results</p>
+              
+
+            </div>
+      </div> 
+    <script type="text/javascript">
+              $('ready',main);  
+              function main()
+              {
+                setTitulo(); 
+              }
+              function setTitulo()
+              {
+                 $('#toolbar .titulo-dashboard').text('Conversor de Medidas'); 
+              }
+    </script> 
+
+
+      <script type="text/javascript"> 
+
+function openBirthDate() 
+{
+  // SpinningWheel.create();
+
+  var now = new Date();
+  var days = { };
+
+  /*for( var i = 1; i < 32; i += 1 ) 
+  {
+    days[i] = i;
+  }
+  */
+
+  medidas=['Milimetros','Centímetros','Pulgadas','AAA','BBB','CCC','DDDD','EEE','FFF'];
+
+  for( var i = 0; i < medidas.length; i += 1 ) 
+  {
+    days[i] = medidas[i];
+  }
+
+
+
+  SpinningWheel.addSlot(days, 'right', 12);
+  
+  
+  SpinningWheel.setCancelAction(cancel);
+  SpinningWheel.setDoneAction(done); 
+  SpinningWheel.open();
+  
+}
+function construirTodo()
+{
+  setTimeout(function(){ window.scrollTo(0,0); }, 100);
+  openBirthDate();
+    abrir();
+}
+
+function abrir()
+{
+  // openBirthDate();
+  SpinningWheel.open();
+}
+
+function done() {
+  var results = SpinningWheel.getSelectedValues();
+//  console.log(results); 
+
+  document.getElementById('result').innerHTML = 'values: ' + results.values.join(' ') + '<br />keys: ' + results.keys.join(', ');
+}
+
+function cancel() {
+  document.getElementById('result').innerHTML = 'cancelled!';
+}
+function main()
+{
+  abrir();
+}
+
+$(document).on('pagecontainerbeforeshow', function (evt,data) 
+{     
+
+   // window.addEventListener('load', main , true); 
+   //alert('llamar a main....') 
+  // main(); 
+});
+
+
+$(document).on('pagecontainerhide', function (evt,data) 
+{  
+  // window.addEventListener('load', main , true); 
+  // alert('llamar a main....') 
+  // main(); 
+
+ // openBirthDate() ;
+ // abrir();
+  
+});
+
+
+$(document).on('pagecontainershow', function (evt,data) 
+{ 
+  // L.B
+  // openBirthDate() ;
+
+
+
+
+  // alert('llamar a main....') 
+    // main();  
+    //setTimeout(function(){ window.scrollTo(0,0); }, 100);
+    //openBirthDate() ;
+    //abrir();
+
+//    wheel=$('#sw-wrapper')
+
+  /*  if(wheel!=null)
+    {
+      alert('rueda no nula !!!');
+      //SpinningWheel.create();
+
+      /// $('#sw-wrapper').css({'width':'50%','right':'0px'});
+         abrir();
+         alert(wheel.attr('id'));   
+    }
+    else
+    {
+      alert('rueda nula !!!');
+    }
+    */
+
+    //$('#sw-wrapper').css({'width':'50%','right':'0px'});
+    // SpinningWheel.open();
+    // abrir();
+
+}); 
+
+
+
+
+      </script>
+</section> 
+
+</div>

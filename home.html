@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <title>Steel Frame</title> 
+  <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile-1.4.3.min.css" /> 
+  <link rel="stylesheet" href="css/steel-frame.css" /> 
+  <meta name="viewport" content="width=device-width"/> 
+
+    <!-- snap --> 
+  <meta  charset="utf-8"/>
+  <meta http-equiv="x-ua-compatible" content="IE=edge" /> 
+
+ <!--  
+     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> +  
+     <meta name="apple-mobile-web-app-capable" content="yes"> 
+     <meta name="apple-touch-fullscreen" content="yes"> 
+ -->
+
+  <link rel="stylesheet" type="text/css" href="css/snap/snap.css" /> 
+  <link rel="stylesheet" type="text/css" href="css/snap/menu.css" />   
+  <link rel="stylesheet" type="text/css" href="css/iscroll-4/slider-dashboard.css" /> 
+
+</head> 
+<body>
+    <div class="snap-drawers">
+        <div class="snap-drawer snap-drawer-left">
+          <div>
+               <h4 class="margin-top-none">Menú</h4>
+               <ul> 
+                   <li class="ui-btn-active"><a id="a-dashboard" href="home.html">Inicio</a></li>                   
+                   <li><a id="a-nuevo-calculo" href="nuevo-calculo.html">Nuevo cálculo</a></li>                   
+                   <li><a id="a-mis-calculos" href="mis-calculos.html" >Mis cálculos</a></li>
+                   <li><a id="a-galeria-steel-frame" href="galeria-steel-frame.html">Galería steel frame</a></li>
+                   <li><a id="a-herramientas" href="herramientas.html">Utilidades</a></li> 
+                   <li><a id="a-proveedores" href="provedores.html">Proveedores</a></li> 
+                   <li><a id="a-cerrar-session" href="index.html">Cerrar session</a></li>  
+               </ul>
+          </div>
+        </div>
+        <div class="snap-drawer snap-drawer-right"></div> 
+    </div>
+
+<!--data-snap-ignore="true" --> 
+    <div id="content" class="snap-content" >
+            <div id="toolbar" >
+                  <a href="#" id="open-left"></a>
+                  <h2 class="titulo-dashboard"> Inicio </h2> 
+
+                  
+                  <!--  data-rel="back"-->
+
+                  <a class="ui-icon-inicio" href="#" >
+                      <figure>
+                            <img  
+                                 class="ui-icon-img-toolbar" 
+                                 src="images/img-rd-icon-inicio.png" />
+                      </figure>
+                  </a>
+              
+
+            </div>
+            <section id="homepage" data-role="page" style="padding-top:58px!important;height:509px!important;" class="home-header homepage" > 
+
+                <form method="get" action="" data-snap-ignore="true"> 
+                       <div id="slider-dashboard">
+                          <div id="scroller-home">
+                            <ul id="thelist-home">
+                              <li>
+                                <figure>
+                                    <img src="images/inicio/img-rd-inicio-slider.png">
+                                </figure>
+                                <div>
+                                    <label for="basicfield" class="lbl-fecha">Casa Batlló 1 </label>
+                                    <label for="username" class="lbl-msg" >08 Noviembre 1</label>
+                                </div>
+                              </li>
+                              <li>
+                                <figure>
+                                    <img src="images/inicio/img-rd-inicio-slider.png">
+                                </figure>
+                                <div>
+                                    <label for="basicfield" class="lbl-fecha">Casa Batlló 2</label>
+                                    <label for="username" class="lbl-msg" >08 Noviembre 2</label>
+                                </div>
+
+                              </li>
+                              <li>
+                                <figure>
+                                    <img src="images/inicio/img-rd-inicio-slider.png">
+                                </figure>
+                                <div>
+                                    <label for="basicfield" class="lbl-fecha">Casa Batlló 3</label>
+                                    <label for="username" class="lbl-msg" >08 Noviembre 3</label>
+                                </div>
+                              </li>
+                              <li>
+
+                                <figure>
+                                    <img src="images/inicio/img-rd-inicio-slider.png">
+                                </figure>
+                                <div>
+                                    <label for="basicfield" class="lbl-fecha">Casa Batlló 4</label>
+                                    <label for="username" class="lbl-msg" >08 Noviembre 4</label>
+                                </div>
+
+                              </li>
+                            </ul>
+                        </div>
+                      </div>
+                        <div id="nav-home">
+                          <ul id="indicator-home">
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                          </ul>
+                        </div>                    
+                </form> 
+
+               <!-- data-transition="fade"-->
+                <div class="ui-content"> 
+                  <div id="div-dashboard" class="display-none" class="div-dashboard"> 
+                     <a href="home.html"  >Inicio</a>
+                  </div>
+                  <div class="capa-tablero-1">  
+                    <div class="capa-tablero-2"> 
+                   <div class="ui-grid-a"> 
+                        <!-- ui-btn-active ,   ui-block-activo--> 
+
+                        <div class="ui-block-a sin-borde-top div-nuevo-calculo"
+                             id="div-nuevo-calculo"> 
+                            <a href="nuevo-calculo.html"  
+                               class="div-nuevo-calculo">
+
+                                <img class="img-home-nuevo-calculo div-nuevo-calculo" 
+                                     src="images/inicio/img-nuevo-calculo.png">  
+                                <p class="div-nuevo-calculo">
+                                  <a href="nuevo-calculo.html"   
+                                        style="color:#495458"                                      
+                                        clase="div-nuevo-calculo color-no-select-modulo-orange" >
+                                        Nuevo cálculo
+                                  </a>
+                                </p>
+                            </a>
+                            
+
+                        </div>                
+                        <div  class="ui-block-b sin-borde-top div-mis-calculos" 
+                              id="div-mis-calculos">
+                             <a href="mis-calculos.html" 
+                                class="div-mis-calculos" > 
+
+                                <img class="img-home-mis-calculo div-mis-calculos" 
+                                     src="images/inicio/img-mis-calculos.png"> 
+                                <p class="div-mis-calculos"> 
+                                   <a href="mis-calculos.html" 
+                                      class="div-mis-calculos color-no-select-modulo-orange">
+                                      Mis cálculos 
+                                    </a> 
+                                  </p> 
+                            </a> 
+                            <input type="hidden" value="a-mis-calculos">
+                        </div> 
+                        
+                    </div>
+
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a div-galeria-steel" id="div-galeria-steel">
+                            <a href="galeria-steel-frame.html" class="div-galeria-steel" > 
+                                <img class="img-home-galeria-steel div-galeria-steel" src="images/inicio/img-galeria-steel.png" > 
+                                <p class="div-galeria-steel">
+                                    <a href="galeria-steel-frame.html"  class="div-galeria-steel width-text-galeria color-no-select-modulo-orange">
+                                        Galería Steel Frame
+                                    </a>
+                                </p>
+                             </a>  
+                             <input type="hidden" value="a-galeria-steel">
+                        </div> 
+                        <!--div-proovedores -->
+                        <!-- data-transition="fade"  -->
+
+                         <div class="ui-block-b" id="div-herramientas">
+                            <a href="herramientas.html"   > 
+                                <img class="img-home-herramientas" src="images/inicio/img-herramientas.png"> 
+                                <p>
+                                   <a href="herramientas.html" 
+                                     class="color-no-select-modulo-orange" >Utilidades</a> 
+                                </p>
+                            </a> 
+                            <!--<input type="hidden" value="a-herramientas"> -->
+                        </div> 
+                    </div> 
+
+                    <div class="ui-grid-a"> 
+                        <div class="ui-block-b " id="div-proovedores" >
+                              <a href="provedores.html" 
+                               class="div-proovedores" > 
+                                  <img class="img-home-proovedores div-proovedores" src="images/inicio/img-proovedores.png" >
+                                  <p class="div-proovedores">
+                                    <a href="provedores.html" 
+                                    class="div-proovedores color-no-select-modulo-orange" > Proveedores </a>
+                                  </p>
+                              </a>  
+                        </div>
+                        <div class="ui-block-b" id="div-feeback">
+                            <a href="feeback.html" > 
+                                <img class="img-home-feeback" src="images/inicio/img-feeback.png"> 
+                                <p>
+                                  <a href="feeback.html" class="color-no-select-modulo-orange">Feeback </a>
+                              </p>
+                            </a> 
+                            <!--<input type="hidden" value="a-herramientas"> -->
+                        </div>
+                     </div> 
+                     
+                      <div class="div-msg-notificacion">
+                        <div class="div-ok">
+                            <span class="spn-ok"> </span>
+                        </div> 
+                        <p>Nueva utilidad disponible</p>
+                         <span class="spn-close"></span>
+                      </div> 
+                    </div> 
+                   </div> 
+                </div>
+            </section>
+ </div> 
+
+<!--  <script src="phonegap.js" type="text/javascript"></script>  --> 
+<script src="js/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile/jquery.mobile-1.4.3.min.js" type="text/javascript"></script> 
+
+
+<!--  Libreria --> 
+<script type="text/javascript" src="js/snap/snap.js"></script> 
+<script type="text/javascript" src="js/snap/menu.js"></script>  
+<script type="text/javascript" src="js/iscroll-4/iscroll.js"></script> 
+<script type="text/javascript" src="js/iscroll-4/slider-dashboard.js"></script> 
+<script src="js/steel-frame/home.js" type="text/javascript"></script> 
+
+</body>
+</html> 

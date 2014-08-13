@@ -1,0 +1,105 @@
+<!--style="position:relative" -->
+
+<div style="position:relative">  
+  <section id="conversor-d-medidas-page" data-role="page" class="home-proovedores  home-galeria-steel-frame"> 
+    <div class="ui-content" data-snap-ignore="true">       
+
+      <div class="div-conversor-medida-sup">
+        <div> 
+             <input type="text" 
+             class="ipt-medida color-white" 
+             placeholder="Valor"  required="required" value="325">
+             <span class="borde-input-medida-1" ></span>
+        </div> 
+        <div class="div-conversor-medidas-1"> 
+            <div class="div-conversor-medidas-1-centrar">
+                <select id="medidas-1">
+                   <option value="1_milimetros">Milímetros</option>
+                   <option value="2_centimetros">Centímetros</option>
+                   <option value="3_pulgadas">Pulgadas</option>
+                   <option selected="selected" value="4_pies">Pies</option> 
+                </select> 
+                <span class="spn-medidas-1-lineas spn-medidas-1-linea-1 spn-medidas-1-linea-color"></span> 
+                <span class="spn-medidas-1-lineas spn-medidas-1-linea-2 spn-medidas-1-linea-color"></span>
+           </div>
+        </div>
+      </div>
+
+      <div class="triangulo-inf-conversion-d-medidas" > </div>
+
+            <div class="div-conversor-medida-inf">
+               <div>
+                    <label class="ipt-medida color-white"> 0,345</label>
+               </div>
+               <div class="div-conversor-medidas-2"> 
+                  <div class="div-conversor-medidas-2-centrar"> 
+
+                      <select id="medidas-2">
+                        <option value="1_pies">Pies</option>
+                        <option value="2_pulgadas">Pulgadas</option> 
+                        <option value="3_millas">Millas</option>
+                        <option selected="selected" value="4_kilometros">Kilometros</option>
+                      </select> 
+
+                   <span class="spn-medidas-1-lineas spn-medidas-1-linea-1 spn-medidas-2-linea-color"></span> 
+                   <span class="spn-medidas-1-lineas spn-medidas-1-linea-2 spn-medidas-2-linea-color"></span>
+
+                  </div>    
+               </div>  
+            </div> 
+            <div class="div-equivalencia-d-conversiones">
+                  <p class="color-blamco-plomo"> 1 Centímetro = </p> 
+                  <p>0.393700787 Pulgadas</p>
+            </div>    
+
+           <!-- <script type="text/javascript"> alert('conversor!!!!')</script>  -->
+
+            <script type="text/javascript" src="js/mobiscroll/jquery.iphonepicker.js"> </script> 
+            <script type="text/javascript"  src="js/steel-frame/conversor-d-medidas.js"> </script>
+
+        <div class="valor" style="display:block"> valor </div> 
+    </div> 
+  
+  <!--</div> -->
+
+
+  <style type="text/css"> 
+
+     #slider-dashboard{display: none;} 
+
+    .ui-select{overflow: hidden;}
+    .ui-select #medidas-1-button{overflow: hidden;} 
+
+    .div-conversor-medida-sup .div-conversor-medidas-1 .div-conversor-medidas-1-centrar .ui-select{display: none;}
+    .div-conversor-medida-inf .div-conversor-medidas-2 .div-conversor-medidas-2-centrar .ui-select{display: none;}
+
+    #uipv_ul_medidas-1 li,
+    #uipv_ul_medidas-2 li {font-size: 15px;text-shadow:none;font-weight:normal;color:#f1f1f1;} 
+
+    #medidas-2-button{background: transparent;border:none;}
+    .valor{border: 1px solid blue}
+    
+    .spn-medidas-1-lineas 
+    { 
+       position: absolute;
+       width: 100%;       
+       z-index: 13;
+    }
+
+    .spn-medidas-1-linea-color{border-bottom: 1px solid #8c8e8f;}
+    .spn-medidas-2-linea-color{border-bottom: 1px solid #78c7e5;}
+
+    .spn-medidas-1-linea-1
+    { 
+       top:80px; 
+       left:0px;
+    }
+
+    .spn-medidas-1-linea-2
+    {
+      top : 115px ;
+      left: 0px ;
+    }
+  </style>   
+ </section> 
+</div>

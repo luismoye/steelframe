@@ -1,0 +1,66 @@
+<section id="feebackpage"   data-role="page" > 
+    <div class="ui-content">
+        <!-- <p class="txt-contenido"> Contenido de feeback </p> --> 
+        <h2> Ayúdenos a mejorar  </h2>
+        <p class="p-msg-feeback">Queremos seguir mejorando día a día. Por eso nos interesa su opinión.  </p>
+
+        <div class="ui-field-contain"> 
+            <select name="tipocomentario" id="tipocomentario">
+                    <option value="argentina">Tipo de comentario</option>
+                    <option value="bolivia">Comentario 1</option>  
+            </select>
+            <span class="flecha-abajo-feeback"> </span> 
+            <textarea name="comentario" id="comentario" style="min-height: 173px;" data-mini="true"> </textarea> 
+            <!--
+            <input  type="button" id="btn-enviar-comentario" value="Enviar">
+        -->
+	        <div class="ui-field-contain border-bottom-style-none padding-none div-btn-ingresar" > 
+	                      <a href="#" data-transition="flip" 
+	                          class="ui-btn ui-icon-plus ui-btn-active ui-state-persist btn-enviar-feeback"> Enviar </a> 
+	        </div>
+        </div> 
+    </div>
+
+    <style type="text/css"> 
+    
+      .flecha-abajo-feeback
+      {   
+          width: 11px;
+          height: 7px;
+          background: url('images/flecha-abajo-proveedor.png') no-repeat;
+          position: absolute; 
+          top: 40px; 
+          right: 17px;
+       } 
+
+    </style>
+
+<script type="text/javascript">
+    			toolbar=document.getElementById('toolbar'); 
+                toolbar.childNodes[3].innerText="Feedback"; 
+
+  $(document).on('pagecontainerbeforeshow', function (evt,data) 
+	{   
+      realizarAjustes();
+      setIconoToolBar();
+
+	}); 
+
+  function realizarAjustes()
+  {
+    tipoComentarioButton=$('#feebackpage').find('#tipocomentario-button'); 
+    if(tipoComentarioButton!=null)
+    {
+         tipoComentarioButton.removeClass('ui-btn-icon-right'); 
+    }
+  }
+
+  function setIconoToolBar()
+  {
+    $('#toolbar .ui-icon-img-toolbar').css({'width':'10px','height':'17px'});  
+    $('#toolbar .ui-icon-inicio figure  img').attr('src','images/img-rd-flecha-atras.png'); 
+  }
+
+
+ </script>
+</section> 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title>Steel Frame </title>  
+<head> 
+    <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile-1.4.3.min.css" /> 
+    <link rel="stylesheet" href="css/steel-frame.css" />  
+    <meta name="viewport" content="width=device-width"/>     
+    <meta charset="utf-8"> 
+
+</head> 
+<body>  
+        <section id="loginpage" data-role="page" class="bg-login"> 
+            <div data-role="header" class="bg-login border-bottom-style-none" > 
+                <h2 class="bg-login  color-login font-weight-normal font-size-title-1-login">Bienvenido</h2> 
+                <label class="bg-login color-login text-shadow-initial text-align-center"> Identifíquese para disfrutar de una mejor experiencia</label> 
+            </div> 
+            <div class="ui-content">              
+                <form method="get" action="" name="frm-login" id="frm-login">
+                  <div class="ui-field-contain border-bottom-style-none padding-none font-weight-normal"          > 
+                  <input  type="text" name="data[User][username]"
+                            id="email" 
+                            required 
+                            value="luismoye1110@gmail.com" placeholder="Email" 
+                            class="bg-login color-login ui-field-email text-shadow-initial"
+                             /> 
+                  </div>
+                  <div class="border-bottom-style-none padding-none" >
+                    <input type="password"
+                           name="data[User][password]"
+                           id="password" 
+                           required 
+                           value="123"  
+                           placeholder="Contraseña"  
+                           class="bg-login color-login ui-field-password text-shadow-initial font-weight-normal" /> 
+                  </div>              
+                  <div class="ui-field-contain border-bottom-style-none padding-none div-btn-ingresar" > 
+                      <a href="#" data-transition="flip" 
+                          class="ui-btn ui-icon-plus ui-btn-active ui-state-persist btn-ingresar"> Ingresar </a> 
+                  </div>
+
+                  <div class="div-olvido-contrasenia">
+                       <a href="#">¿Olvidó su contraseña?</a>
+                  </div>
+
+                  <div class="ui-field-contain bg-login border-bottom-style-none div-facebook"> 
+                     <div>
+                         <span>Ingreso con Facebook</span>
+                     </div>
+                     <div>
+                          <span></span>
+                     </div> 
+                  </div> 
+                 <ul data-role="listview" style="margin:0!important;" >
+                       <li>
+                            <div>
+                                <span class="">Crear una nueva cuenta</span> 
+                            </div>
+                            <div>
+                                <span></span> 
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span 
+                                  class="">Ingresar sin identificarse 
+                                </span> 
+                            </div>
+                            <div>
+                                <span></span> 
+                            </div>
+                        </li> 
+                 </ul> 
+
+                </form>
+            </div>
+
+            <style type="text/css"> 
+
+                /*#loginpage .ui-header{margin-top: 0px;padding-top: 0px;border-top:0px;}*/ 
+
+                #loginpage .ui-listview{ position: absolute;width:100%;top:0px;left: 0;margin:0;padding:0; } 
+                #loginpage .ui-listview li
+                {
+                   background: #7d7d7d;
+                   border:none;
+                   height: 46px;
+                   margin: 0!important;
+                   padding: 0!important;
+                }
+                #loginpage .ui-listview li div{height: 46px}
+            </style>
+
+    </section> 
+
+    <script src="js/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile/jquery.mobile-1.4.3.min.js" type="text/javascript"></script> 
+    <script src="js/steel-frame/login.js" type="text/javascript"></script> 
+
+
+<!--  Librerias Backbone  --> 
+
+<!--    
+     <script type="text/javascript" src="js/backbone/underscore-min.js"></script>
+     <script type="text/javascript" src="js/backbone/backbone-min.js"></script>     
+     <script type="text/javascript" src="js/backbone/handlebars.js"></script>  
+-->
+
+<!--  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>  -->
+<!--  <script type="text/javascript" src="templates/templates.js"></script>   -->
+<!--  <script src="js/steel-frame/login-backbone.js" type="text/javascript"></script> -->
+
+</body>
+</html>
