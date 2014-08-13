@@ -1,0 +1,112 @@
+#slider-dashboard
+{
+  /*width:320px;*/
+
+  height: 120px; 
+  float:left;
+  position:relative;  /* On older OS versions "position" and "z-index" must be defined, */
+  z-index:1;      /* it seems that recent webkit is less picky and works anyway. */
+  overflow:hidden;
+}
+
+#scroller-home 
+{ 
+  /*  width(320)*7=>2240px; width:2240px; */   
+  height:100%;
+  float:left;
+  padding:0; 
+  height: 120px; 
+}
+
+#scroller-home ul 
+{
+  list-style:none;
+  display:block;
+  float:left;
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  text-align:left;
+}
+
+#scroller-home li 
+{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+  display:block; 
+  float:left; 
+  /*width:320px;*/
+  height:160px;
+  text-align:center;
+  font-family:georgia;
+  font-size:18px;
+  line-height:140%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#scroller-home li  figure{width: 35%;float:left;height:100%;} 
+#scroller-home li  figure img 
+{
+  padding-top: 32px; 
+  width: 62px;
+  height: 65px; 
+}  
+
+
+#scroller-home li  >div{width: 65%;float:left;height:100%;}
+
+
+#nav-home 
+{
+  height: 20px;
+  margin: 0 auto;
+ /* width: 320px;*/
+  display: block;
+  clear: both;
+}
+
+#indicator-home
+{
+  list-style:none; 
+  padding:0; 
+  margin:0;
+  margin: 0 auto; 
+  /*width:70px; */
+  margin: 0 auto; 
+}
+#indicator-home > li 
+{
+  float:left;
+  padding:0; margin:0;
+} 
+#indicator-home > li 
+{
+  text-indent:-9999em; 
+  width:6px; height:6px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  -o-border-radius:4px;
+  border-radius:4px;
+  background:#ddd;
+  overflow:hidden;
+  margin-right:4px;
+}
+
+#indicator-home > li.active 
+{ 
+   background:transparent;
+   border: 2px solid #ddd; 
+   height: 2px;
+   width:  2px;
+   
+}
+
+#indicator > li:last-child 
+{
+  margin:0;
+}
